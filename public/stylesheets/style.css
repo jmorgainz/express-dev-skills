@@ -1,8 +1,49 @@
 body {
+  
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gray;
+  color: white;
+  text-align: center;
 }
 
 a {
-  color: #00B7FF;
+  color: #ffa200;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
+}
+	
+li {
+  list-style: none;
+}
+
+.buttons {
+  background-color: #ffa200;
+  
+}
+
+.subBtn {
+  transition-duration: .4s;
+}
+
+.subBtn:hover {
+  background-color: #ffa200;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  justify-content: left;
 }
