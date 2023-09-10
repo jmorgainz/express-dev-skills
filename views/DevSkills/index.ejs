@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+  <h3>My Skills as of <%= time %></h3>
+
+    <ul>
+      <% DevSkills.forEach(function(t) { %>
+        <li>
+          <form action="/DevSkills/<%= t.id %>?_method=DELETE" class ="delete-form" method="post">
+            <button type="submit" class="buttons">X</button>
+          </form>
+          <a href="/DevSkills/<%= t.id %>"><%= t.DevSkill %></a>
+            - 
+          <%= t.done ? 'done' : 'not done' %>
+        </li>
+      <% }); %>
+    </ul>
+
+    <a href="/DevSkills/new"><button class="subBtn">Add a Skill</button></a>
+    <%- include('../partials/footer') %>
